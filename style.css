@@ -243,12 +243,26 @@ h2{
     object-position: center;
     padding: 10px;
 }
-
 .detail-box{
     display: grid;
     row-gap: 0.5rem;
 }
-
+.send-query{
+    margin-top: 20px;
+    text-align: center;
+  }
+  #send-query-btn{
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+  } 
+  #send-query-btn:hover{
+    background-color: #218838;
+  }
 .cart-product-title{
     font-size: 1rem;
     text-transform: uppercase;
