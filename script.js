@@ -138,3 +138,32 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         alert("Błąd: " + JSON.stringify(error));
     });
 });
+// na tel poprzez click
+document.addEventListener("DOMContentLoaded", function () {
+    const imageContainers = document.querySelectorAll(".image-container");
+
+    imageContainers.forEach(container => {
+        container.addEventListener("click", function () {
+            const defaultImage = container.querySelector(".default");
+            const hoverImage = container.querySelector(".hover");
+
+            if (defaultImage.style.opacity === "0") {
+                defaultImage.style.opacity = "1";
+                hoverImage.style.opacity = "0";
+            } else {
+                defaultImage.style.opacity = "0";
+                hoverImage.style.opacity = "1";
+            }
+        });
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+});
